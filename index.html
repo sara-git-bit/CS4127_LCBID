@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mini Pokédex</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#pokemon">Skip to the Pokémon</a>
+
+  <header>
+    <div class="brand">
+      <span class="ball" aria-hidden="true"></span>
+      <h1>Mini Pokédex</h1>
+    </div>
+    <nav aria-label="Main">
+      <a href="#home">Home</a>
+      <a href="#pokemon">Pokémon</a>
+      <a href="#team">My team</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <h2>Build your dream team</h2>
+      <p>Browse eight Pokémon, filter them by type, and pick up to six for your team. Your team is saved in this browser.</p>
+      <a class="button" href="#pokemon">Start browsing</a>
+    </section>
+
+    <section id="pokemon" aria-labelledby="pokemon-title">
+      <h2 id="pokemon-title">Pokémon</h2>
+
+      <div class="tools">
+        <div class="field">
+          <label for="search">Search by name</label>
+          <input id="search" type="search" placeholder="e.g. Pikachu" autocomplete="off">
+        </div>
+        <div class="field">
+          <span id="filter-label">Filter by type</span>
+          <div id="filters" class="filters" role="group" aria-labelledby="filter-label"></div>
+        </div>
+      </div>
+
+      <p id="status" class="status" role="status"></p>
+      <div id="grid" class="grid"></div>
+    </section>
+
+    <section id="team" aria-labelledby="team-title">
+      <h2 id="team-title">My team <span id="team-count" class="count">0 of 6</span></h2>
+      <p id="team-empty" class="empty">Your team is empty. Press "Add to team" on a Pokémon above.</p>
+      <ul id="team-list" class="team-list"></ul>
+      <button id="clear" class="button secondary" type="button">Clear team</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>A class demo site for CS4127. Pokémon is a trademark of Nintendo, Creatures Inc. and GAME FREAK inc. This page is not affiliated with them.</p>
+  </footer>
+</body>
+</html>
