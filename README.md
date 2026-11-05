@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Mini Pokédex
 
 A small Pokémon-themed website for CS4127. Browse eight Pokémon, search by name, filter by type and build a team of up to six. The team is saved in your browser.
@@ -19,3 +20,7 @@ There are no images to upload and no internet connection is needed. Open `index.
 ## Notice
 
 This is a class demo. Pokémon is a trademark of Nintendo, Creatures Inc. and GAME FREAK inc. This site is not affiliated with them and uses no official artwork.
+=======
+# CS4127_LCBID
+Brunei Tourism Website
+>>>>>>> 151fcb1d5c90aedb3ba77517aa3009e19d6eb947
